@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html>
+
+
+
+
+
+
+
+
+
+
+
+
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -12,6 +24,151 @@
   </head>
 
   <body>
+
+
+<em><h2>Зарифуллин А.П м-11 </h2>
+<h2>Вариант 6 </h2></em>
+
+
+
+
+  <canvas id="smile" width="800" height="800">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
+
+<script type="text/javascript">
+    var myCanvas = document.getElementById('smile');
+
+     var ctx = myCanvas.getContext('2d');
+
+
+
+
+
+
+
+
+ // Рисуем низ
+	ctx.strokeStyle = '#6B8E23';
+	ctx.moveTo(10,150);
+	ctx.lineTo(155,150);
+	ctx.lineTo(220,100);
+ctx.lineWidth = 12
+ctx.lineCap = "round"
+	ctx.stroke();
+
+
+ 
+  // Рисуем овал как сжатый круг
+      ctx.scale(2, 1); // сжимаем по вертикали в 2 раза
+
+      ctx.beginPath();
+
+      var centerX = 45;
+      var centerY = 105;
+      var radius = 40;
+      ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+
+      ctx.resetTransform();
+      ctx.closePath();
+
+      // красим
+      ctx.fillStyle = '#32CD32';
+      ctx.fill();
+      ctx.lineWidth = 5;
+      ctx.strokeStyle = '#228B22';
+
+      ctx.stroke();
+
+
+// Рисуем окружность  v tele
+
+     ctx.strokeStyle = "#228B22";
+     ctx.fillStyle = "#3CB371";
+     ctx.beginPath();
+     ctx.arc(90,110,30,0,Math.PI*2,true);
+     ctx.closePath();
+     ctx.stroke();
+     ctx.fill();
+
+
+
+
+
+
+
+// Рисуем окружность golova
+
+     ctx.strokeStyle = "#228B22";
+     ctx.fillStyle = "#3CB371";
+     ctx.beginPath();
+     ctx.arc(210,95,25,0,Math.PI*2,true);
+     ctx.closePath();
+     ctx.stroke();
+     ctx.fill();
+
+
+
+
+// Рисуем левый глаз 
+     ctx.fillStyle = "#fff";
+     ctx.beginPath();
+     ctx.arc(199,90,4,0,Math.PI*2,true);
+     ctx.closePath();
+     ctx.stroke();
+     ctx.fill();
+
+
+// Рисуем pravii глаз 
+
+     ctx.fillStyle = "#fff";
+     ctx.beginPath();
+     ctx.arc(220,90,4,0,Math.PI*2,true);
+     ctx.closePath();
+     ctx.stroke();
+     ctx.fill();
+//rot
+
+    ctx.beginPath();  
+     ctx.moveTo(200,110);
+     ctx.quadraticCurveTo(210,110,220,110);
+     ctx.quadraticCurveTo(210,120,200,110); 
+ctx.lineWidth = 2
+     ctx.closePath();
+     ctx.stroke();
+     ctx.fill();
+
+
+
+//lines
+        ctx.strokeStyle = '#6B8E23';
+	ctx.moveTo(220,70);
+	ctx.lineTo(235,40);
+        ctx.lineWidth = 3
+        ctx.stroke();
+
+
+//lines too
+        ctx.strokeStyle = '#6B8E23';
+	ctx.moveTo(200,70);
+	ctx.lineTo(185,40);
+        ctx.lineWidth = 3
+	ctx.stroke();
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+
+
+
 
     <header>
       <div class="container">
